@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+    <title>Word Puzzle</title>
+    <script src="word-puzzles.js"></script>
+    
+    <style>
+        body {text-align:center; background-color: #ffffcc;}
+        canvas {margin: 10px; background-color: #eeffff; border-style:solid;}
+        div {margin: 15px;}
+    </style>
+</head>
+    
+<body onload="onLoad();">
+    <div>
+    <input type="text" id="phrase" value="WORD LETTER SENTENCE" size="50" />
+    <input type="button" value="submit" onclick="initializePuzzle(document.getElementById('phrase').value);" />
+    </div>
+    
+    <div>
+    <canvas width="800" height="600" id="canvas"></canvas>
+    </div>
+</body>
+    
+</html>
